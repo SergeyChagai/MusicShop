@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="models">
+        <item></item>
+        <item>FENDER CC-60S</item>
+        <item>GIBSON Les Paul</item>
+        <item>IBANEZ RGRT421-WNF</item>
+        <item>Yamaha C40</item>
+        <item>EPIPHONE ES-339 Cherry</item>
+    </string-array>
+</resources>

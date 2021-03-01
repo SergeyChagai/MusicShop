@@ -2,6 +2,7 @@ package com.example.musicshop
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.Spinner
 
@@ -16,9 +17,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun SelectItem(view: Spinner){
+    fun SelectItem(view: View) {
         var imageView = findViewById<ImageView>(R.id.imageView4)
-        imageView.setImageResource()
+
+        imageView.setImageResource(R.drawable.fender_stratocaster)
     }
 }
 

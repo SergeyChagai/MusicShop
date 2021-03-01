@@ -8,4 +8,18 @@
         <item>Yamaha C40</item>
         <item>EPIPHONE ES-339 Cherry</item>
     </string-array>
+    <integer-array name="prices">
+        <item>200</item>
+        <item>100</item>
+        <item>300</item>
+        <item>123</item>
+        <item>500</item>
+    </integer-array>
+    <string-array name="picSrc">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>

@@ -2,6 +2,8 @@ package com.example.musicshop
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.Spinner
 
 class MainActivity : AppCompatActivity() {
     var names = R.array.models
@@ -12,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+    }
+
+    fun SelectItem(view: Spinner){
+        var imageView = findViewById<ImageView>(R.id.imageView4)
+        imageView.setImageResource()
     }
 }
 

@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicShop">
+        <receiver
+            android:name=".BuyMessageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ru.music_shop.action.BROADCAST_BUY_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".BascetActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

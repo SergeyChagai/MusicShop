@@ -30,6 +30,7 @@ class BascetActivity : AppCompatActivity() {
     public fun onBuyButtonClick(view: View){
         var action = getString(R.string.BROADCAST_BUY_MESSAGE)
         var intent = Intent(action)
+        intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES)
         intent.putExtra("message", getString(R.string.BUY_MESSAGE))
         sendBroadcast(intent)
        // var prev = Intent(this, MainActivity::class.java)

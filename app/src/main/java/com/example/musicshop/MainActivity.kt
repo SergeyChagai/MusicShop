@@ -1,6 +1,7 @@
 package com.example.musicshop
 
 import android.content.Intent
+import android.content.IntentFilter
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var reciever = BuyMessageReceiver()
+        registerReceiver(reciever, IntentFilter("ru.music_shop.action.BROADCAST_BUY_MESSAGE"))
 
         var spinner = findViewById<Spinner>(R.id.spinner)
         modelsList.add(Model("FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK", 12400, getDrawable(R.drawable.fender_stratocaster) as Drawable))

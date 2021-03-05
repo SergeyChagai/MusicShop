@@ -91,10 +91,10 @@
         android:layout_height="120dp"
         app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintVertical_bias="0.147"
         app:srcCompat="@drawable/fender_stratocaster" />
 
     <TextView
@@ -124,22 +124,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/count"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plus_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/button_color"
         android:gravity="center"
-        android:text="0"
-        android:textAlignment="center"
+        android:onClick="CountIncrease"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/total_price_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintStart_toEndOf="@+id/count"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.974" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/minus_button"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/button_color"
         android:gravity="center"
         android:onClick="CountDecrease"
@@ -149,27 +154,28 @@
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/total_price_view"
         app:layout_constraintEnd_toStartOf="@+id/count"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.974" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/plus_button"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@color/button_color"
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:gravity="center"
-        android:onClick="CountIncrease"
-        android:text="+"
-        android:textColor="#FFFFFF"
-        android:textSize="40dp"
+        android:text="0"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/total_price_view"
-        app:layout_constraintStart_toEndOf="@+id/count"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.928" />
 
     <TextView
         android:id="@+id/total_price_view"
         android:layout_width="196dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button1"
